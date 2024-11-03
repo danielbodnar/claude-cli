@@ -1,0 +1,8 @@
+modules = ["nodejs-20"]
+run = "bun start"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "bun start"]
