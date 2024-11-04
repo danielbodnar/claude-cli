@@ -2,13 +2,80 @@
   "name": "claude-cli",
   "module": "index.ts",
   "type": "module",
+  "repository": "danielbodnar/claude-cli",
+  "bin": {
+    "claude-cli": "src/index.ts"
+  },
+  "scripts": {
+    "start": "bun src/index.ts",
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build ./src/index.ts --outdir ./dist",
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist node_modules",
+    "test-vitest": "vitest"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "^1.1.13",
+    "@types/deno": "^2.0.0",
+    "@types/node": "^22.8.7",
+    "changelogen": "^0.5.7",
+    "eslint-config-unjs": "^0.4.1",
+    "execa": "^9.5.1",
+    "jiti": "^2.4.0",
+    "knip": "^5.36.2",
+    "prettier": "^3.3.3",
+    "unbuild": "^2.0.0",
+    "vitest": "^2.1.4"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.6.3"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.31.0"
-  }
+    "@anthropic-ai/sdk": "^0.31.0",
+    "@clack/prompts": "^0.7.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/js-yaml": "^4.0.9",
+    "automd": "^0.3.12",
+    "c12": "^2.0.1",
+    "citty": "^0.1.6",
+    "cli-highlight": "^2.1.11",
+    "cli-highlighter": "^1.0.1",
+    "consola": "^3.2.3",
+    "defu": "^6.1.4",
+    "destr": "^2.0.3",
+    "fs-extra": "^11.2.0",
+    "h3": "^1.13.0",
+    "hookable": "^5.5.3",
+    "js-yaml": "^4.1.0",
+    "magicast": "^0.3.5",
+    "mlly": "^1.7.2",
+    "nanoid": "^5.0.8",
+    "nitro": "^0.0.0",
+    "ofetch": "^1.4.1",
+    "pathe": "^1.1.2",
+    "pkg-types": "^1.2.1",
+    "std-env": "^3.7.0",
+    "unctx": "^2.3.1",
+    "undocs": "^0.2.30"
+  },
+  "engines": {
+    "node": ">=18",
+    "bun": ">=1.0.0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "cli",
+    "claude",
+    "anthropic",
+    "ai",
+    "chat"
+  ],
+  "license": "MIT"
 }

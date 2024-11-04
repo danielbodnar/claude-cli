@@ -173,12 +173,3 @@ dist
 
 # Finder (MacOS) folder config
 .DS_Store
-
-node_modules
-coverage
-dist
-.vscode
-.DS_Store
-.eslintcache
-*.log*
-*.env*

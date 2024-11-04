@@ -2,6 +2,8 @@
 import { dump, load } from "js-yaml";
 import { ensureDir, writeFile, readFile } from "fs-extra";
 import { pathe } from "pathe";
+import type { Session } from "../types";
+import consola from "consola";
 
 export class SessionManager {
   constructor(private sessionDir: string) {}

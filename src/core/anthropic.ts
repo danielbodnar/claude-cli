@@ -1,6 +1,6 @@
 // src/core/anthropic.ts
 import Anthropic from "@anthropic-ai/sdk";
-import { rateLimit } from "@unjs/h3";
+import {  } from "h3";
 import { consola } from "consola";
 
 const rateLimiter = rateLimit({

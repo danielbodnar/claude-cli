@@ -8,9 +8,6 @@
     "jsx": "react-jsx",
     "allowJs": true,
 
-    "esModuleInterop": true,
-    "allowImportingTsExtensions": true,
-
     // Bundler mode
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -25,7 +22,6 @@
     // Some stricter flags (disabled by default)
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noPropertyAccessFromIndexSignature": false,
-    "include": ["src", "test", "playground", "examples", "docs"]
+    "noPropertyAccessFromIndexSignature": false
   }
 }
