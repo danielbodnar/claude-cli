@@ -187,7 +187,7 @@ $ claude-cli chat --template rust
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/claude-cli.git
+git clone https://github.com/danielbodnar/claude-cli.git
 
 # Install dependencies
 bun install
